@@ -1,0 +1,30 @@
+<!-- Thank You Modal -->
+<div id="thankYouModal" class="modal">
+  <div class="modal-content">
+    <h2>Thank You!</h2>
+    <p>Your feedback has been submitted.</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script>
+  const form = document.querySelector(".feedback-form");
+  const modal = document.getElementById("thankYouModal");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent actual form submission
+    modal.style.display = "block";
+    form.reset(); // clear form fields
+  });
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Optional: Close modal when clicking outside it
+  window.onclick = function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>

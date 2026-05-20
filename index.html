@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Botswana Defence Force — Protecting national sovereignty with honour, discipline and unwavering commitment."/>
+  <title>BDF | Home — Botswana Defence Force</title>
+  <link rel="icon" href="LOGO.webp" type="image/webp"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <div class="brand-logo-wrap">
+        <img src="LOGO.webp" alt="BDF Logo"/>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">BDF</span>
+        <span class="brand-sub">Botswana Defence Force</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html"      class="nav-link active">Home</a>
+      <a href="Divisions.html"  class="nav-link">Divisions</a>
+      <a href="Operations.html" class="nav-link">Operations</a>
+      <a href="About.html"      class="nav-link">About</a>
+      <a href="Contact.html"    class="nav-link">Contact</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <img src="FLAG.jpg" alt="Botswana Flag" class="header-flag"/>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html"      class="nav-link active"><i class="fas fa-home" style="width:20px"></i> Home</a>
+  <a href="Divisions.html"  class="nav-link"><i class="fas fa-layer-group" style="width:20px"></i> Divisions</a>
+  <a href="Operations.html" class="nav-link"><i class="fas fa-crosshairs" style="width:20px"></i> Operations</a>
+  <a href="About.html"      class="nav-link"><i class="fas fa-info-circle" style="width:20px"></i> About</a>
+  <a href="Contact.html"    class="nav-link"><i class="fas fa-envelope" style="width:20px"></i> Contact</a>
+</nav>
+
+<main class="page-wrapper">
+
+  <!-- ══ HERO ═════════════════════════ -->
+  <section class="hero-section">
+    <!-- Background & overlay (absolute, behind everything) -->
+    <div class="hero-bg" style="background-image:url('1737447399.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Main hero content — flex:1, fills the available height -->
+    <div class="hero-main">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-shield-halved"></i> Botswana Defence Force
+          </div>
+          <h1 class="hero-title">
+            Protecting National<br/>
+            <span>Sovereignty</span> with<br/>
+            Honour &amp; Discipline
+          </h1>
+          <p class="hero-desc">
+            Dedicated to safeguarding the nation through professionalism, resilience, and excellence
+            in military operations — on the ground, in the air, and across every theatre of service.
+          </p>
+          <div class="hero-actions">
+            <a href="About.html"     class="btn btn-primary"><i class="fas fa-info-circle"></i> Our Mission</a>
+            <a href="Divisions.html" class="btn btn-outline"><i class="fas fa-layer-group"></i> Our Divisions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar — sits naturally at the bottom, no absolute overlap -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num" data-target="1977" data-suffix="">1977</div>
+        <div class="stat-lbl">Year Established</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="4" data-suffix="+">4+</div>
+        <div class="stat-lbl">Operational Divisions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="30" data-suffix="+">30+</div>
+        <div class="stat-lbl">Years of Peacekeeping</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURE STRIP ═══════════════════════ -->
+  <section class="section" style="padding:4rem 0 3rem;">
+    <div class="container">
+      <div class="feature-strip">
+        <div class="feature-item">
+          <i class="fas fa-shield-halved"></i>
+          <h4>National Defence</h4>
+          <p>Protecting sovereignty and territorial integrity</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-dove"></i>
+          <h4>Peacekeeping</h4>
+          <p>Contributing to global stability missions</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-hands-helping"></i>
+          <h4>Humanitarian</h4>
+          <p>Disaster relief and community support</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Training</h4>
+          <p>Elite military education and readiness</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DIVISIONS ═══════════════════════════ -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <span class="section-label">Our Structure</span>
+      <h2 class="section-title">Defence Force Divisions</h2>
+      <div class="gold-line"></div>
+      <p class="section-subtitle">Each division plays a critical role in maintaining peace, defending sovereignty, and ensuring rapid, effective military response.</p>
+
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <img class="card-img" src="th.webp" alt="Ground Forces"/>
+          <div class="card-body">
+            <span class="card-tag">Ground Forces</span>
+            <h3 class="card-title">Territorial Integrity &amp; Border Security</h3>
+            <p class="card-desc">Responsible for land-based military operations, safeguarding national borders, and maintaining internal security through disciplined strategic deployment.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img class="card-img" src="download.webp" alt="Air Wing"/>
+          <div class="card-body">
+            <span class="card-tag">Air Wing</span>
+            <h3 class="card-title">Aerial Surveillance, Transport &amp; Combat</h3>
+            <p class="card-desc">Provides air mobility, reconnaissance, and rapid response operations to support national defence and emergency missions across Botswana.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img class="card-img" src="BDFS.webp" alt="Special Forces"/>
+          <div class="card-body">
+            <span class="card-tag">Special Forces</span>
+            <h3 class="card-title">Elite Tactical &amp; High-Risk Operations</h3>
+            <p class="card-desc">An elite unit trained for counter-terrorism, reconnaissance, and high-priority mission execution requiring exceptional skill and precision.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img class="card-img" src="bdf.webp" alt="Engineering Corps"/>
+          <div class="card-body">
+            <span class="card-tag">Engineering Corps</span>
+            <h3 class="card-title">Infrastructure &amp; Technical Support</h3>
+            <p class="card-desc">Handles construction, maintenance, and technical support, ensuring operational readiness through engineering excellence and innovation nationwide.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="Divisions.html" class="btn btn-outline"><i class="fas fa-layer-group"></i> View All Divisions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MISSION STATEMENT ════════════════════ -->
+  <section class="section" style="background:rgba(13,34,64,0.5);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container" style="text-align:center;max-width:800px;margin:0 auto;">
+      <i class="fas fa-quote-left" style="font-size:2rem;color:var(--gold);margin-bottom:1.25rem;display:block;"></i>
+      <p style="font-family:'Oswald',sans-serif;font-size:clamp(1.2rem,3vw,1.65rem);color:var(--white);line-height:1.5;font-weight:400;margin-bottom:1.5rem;">
+        "To protect and defend the sovereignty of Botswana, support civil authorities,
+         and contribute to regional and international peace and security."
+      </p>
+      <span class="section-label" style="margin-bottom:0;">BDF Core Mission Statement</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="LOGO.webp" alt="BDF Logo"/>
+        </div>
+        <div class="name">Botswana Defence Force</div>
+        <p>Strength through discipline, honour through service.<br/>Protecting Botswana since 1977.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Divisions.html">Divisions</a></li>
+          <li><a href="Operations.html">Operations</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Private Bag 0058, Gaborone</a></li>
+          <li><a href="#">Botswana</a></li>
+          <li><a href="Contact.html">Submit Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Botswana Defence Force. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .revealed { opacity:1; transform:translateY(0); }
+</style>
+<script src="script.js"></script>
+</body>
+</html>

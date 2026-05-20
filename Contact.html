@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact the Botswana Defence Force — submit feedback, enquiries, and reach out to our public engagement team."/>
+  <title>BDF | Contact — Botswana Defence Force</title>
+  <link rel="icon" href="LOGO.webp" type="image/webp"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Background -->
+<div style="position:fixed;inset:0;background:url('feed.jpg') center/cover no-repeat;z-index:-2;"></div>
+<div class="overlay-full"></div>
+
+<!-- ══ HEADER ══════════════════════════════ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-logo-wrap">
+        <img src="LOGO.webp" alt="BDF Logo"/>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">BDF</span>
+        <span class="brand-sub">Botswana Defence Force</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html"      class="nav-link">Home</a>
+      <a href="Divisions.html"  class="nav-link">Divisions</a>
+      <a href="Operations.html" class="nav-link">Operations</a>
+      <a href="About.html"      class="nav-link">About</a>
+      <a href="Contact.html"    class="nav-link active">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <img src="FLAG.jpg" alt="Botswana Flag" class="header-flag"/>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="index.html"      class="nav-link"><i class="fas fa-home" style="width:20px"></i> Home</a>
+  <a href="Divisions.html"  class="nav-link"><i class="fas fa-layer-group" style="width:20px"></i> Divisions</a>
+  <a href="Operations.html" class="nav-link"><i class="fas fa-crosshairs" style="width:20px"></i> Operations</a>
+  <a href="About.html"      class="nav-link"><i class="fas fa-info-circle" style="width:20px"></i> About</a>
+  <a href="Contact.html"    class="nav-link active"><i class="fas fa-envelope" style="width:20px"></i> Contact</a>
+</nav>
+
+<main class="page-wrapper">
+
+  <!-- Hero -->
+  <section style="padding:5rem 0 3rem;text-align:center;">
+    <div class="container">
+      <span class="section-label"><i class="fas fa-envelope"></i> &nbsp;Get In Touch</span>
+      <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);margin-bottom:0.75rem;">We Value Your Feedback</h1>
+      <p style="font-family:'Oswald',sans-serif;color:var(--gold);letter-spacing:0.12em;font-size:1rem;margin-bottom:1rem;">DISCIPLINE · HONOUR · SERVICE</p>
+      <p style="color:var(--muted);max-width:560px;margin:0 auto;line-height:1.8;">Your feedback helps the Botswana Defence Force improve its operations, service delivery, and public engagement.</p>
+    </div>
+  </section>
+
+  <!-- Info Blocks -->
+  <section style="padding:0 0 3rem;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:3rem;">
+
+        <div class="info-card" style="text-align:center;padding:2rem 1.5rem;">
+          <div class="icon" style="margin:0 auto 1rem;"><i class="fas fa-comments"></i></div>
+          <h3>Public Engagement</h3>
+          <p>We strengthen national defence through transparent communication with citizens and communities across Botswana.</p>
+        </div>
+
+        <div class="info-card" style="text-align:center;padding:2rem 1.5rem;">
+          <div class="icon" style="margin:0 auto 1rem;"><i class="fas fa-chart-line"></i></div>
+          <h3>Continuous Improvement</h3>
+          <p>Your feedback is carefully reviewed to help us improve operations, training, and service delivery across all divisions.</p>
+        </div>
+
+        <div class="info-card" style="text-align:center;padding:2rem 1.5rem;">
+          <div class="icon" style="margin:0 auto 1rem;"><i class="fas fa-lock"></i></div>
+          <h3>Confidential &amp; Secure</h3>
+          <p>All feedback submissions are treated with the utmost confidentiality and processed through secure official channels.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Contact Info -->
+  <section style="padding:0 0 5rem;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:3rem;align-items:start;" class="contact-grid">
+
+        <!-- Form -->
+        <div>
+          <span class="section-label">Feedback Form</span>
+          <h2 class="section-title" style="font-size:1.75rem;margin-bottom:0.5rem;">Submit Your Feedback</h2>
+          <div class="gold-line"></div>
+
+          <form class="form-card" id="contact-form" style="margin:0;" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full Name</label>
+                <input class="form-control" type="text" id="full-name" name="full_name" placeholder="Your full name" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <select class="form-control" id="subject" name="subject">
+                <option value="">— Select a subject —</option>
+                <option>General Feedback</option>
+                <option>Training Enquiry</option>
+                <option>Operations</option>
+                <option>Recruitment</option>
+                <option>Peacekeeping</option>
+                <option>Media &amp; Press</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Share your feedback, suggestion, or enquiry..." required style="resize:vertical;"></textarea>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+              <input type="checkbox" id="consent" style="accent-color:var(--gold);width:16px;height:16px;cursor:pointer;"/>
+              <label for="consent" style="font-size:0.8rem;color:var(--muted);cursor:pointer;">I agree that my feedback may be used to improve BDF services.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem;padding:1rem;">
+              <i class="fas fa-paper-plane"></i> Send Feedback
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div>
+          <span class="section-label">Contact Information</span>
+          <h2 class="section-title" style="font-size:1.75rem;margin-bottom:0.5rem;">Reach Us</h2>
+          <div class="gold-line"></div>
+
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+
+            <div class="info-card" style="padding:1.25rem;">
+              <div style="display:flex;align-items:flex-start;gap:1rem;">
+                <div class="icon" style="flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <h3 style="font-size:0.9rem;margin-bottom:0.3rem;">Headquarters</h3>
+                  <p style="font-size:0.82rem;">Private Bag 0058<br/>Gaborone, Botswana</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card" style="padding:1.25rem;">
+              <div style="display:flex;align-items:flex-start;gap:1rem;">
+                <div class="icon" style="flex-shrink:0;"><i class="fas fa-phone"></i></div>
+                <div>
+                  <h3 style="font-size:0.9rem;margin-bottom:0.3rem;">Telephone</h3>
+                  <p style="font-size:0.82rem;">+267 355 1000<br/>Office Hours: Mon–Fri, 07:30–16:30</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card" style="padding:1.25rem;">
+              <div style="display:flex;align-items:flex-start;gap:1rem;">
+                <div class="icon" style="flex-shrink:0;"><i class="fas fa-globe"></i></div>
+                <div>
+                  <h3 style="font-size:0.9rem;margin-bottom:0.3rem;">Official Website</h3>
+                  <p style="font-size:0.82rem;">www.bdf.mil.bw</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card" style="padding:1.25rem;">
+              <h3 style="font-size:0.9rem;margin-bottom:0.75rem;">Follow Us</h3>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ SUCCESS MODAL ════════════════════════ -->
+<div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+    <h2 id="modal-title">Feedback Received</h2>
+    <p>Thank you. Your message has been submitted to the Botswana Defence Force and will be reviewed shortly.</p>
+    <button class="btn btn-primary" id="modal-close" style="width:100%;justify-content:center;">Close</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="LOGO.webp" alt="BDF Logo"/>
+        </div>
+        <div class="name">Botswana Defence Force</div>
+        <p>Strength through discipline, honour through service.<br/>Protecting Botswana since 1977.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Divisions.html">Divisions</a></li>
+          <li><a href="Operations.html">Operations</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Private Bag 0058, Gaborone</a></li>
+          <li><a href="#">+267 355 1000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Botswana Defence Force. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @media(max-width:900px){
+    .contact-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+<script src="script.js"></script>
+</body>
+</html>
